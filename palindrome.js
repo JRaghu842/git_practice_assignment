@@ -4,19 +4,17 @@
    //Print Yes, if the string is a palindrome, else print No
 
 
-    let N = 5
-    let str = "naman"
-
-    let bag1="";
-    let bag2="   ";
-    
-    for (i=0; i<N; i++) {
+    let N =5;
+    let str ="naman";
+     let bag="";
+  
+     for (i=N-1; i>=0; i--) {
         
-        bag1=bag1+str[i];
-    }
-    
-    for (i=N-1; i<=0; i++) {
-        
-        bag2=bag2+str[i];
-    }
-    
+        bag=bag+str[i];
+     }
+if(bag==str){
+    console.log("Yes")
+}
+  else{
+  console.log("No")
+  }
